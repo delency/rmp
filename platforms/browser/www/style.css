@@ -1,0 +1,140 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+ background: #191970;
+ font-family: "Open Sans",  Impact;
+}
+.area {
+	margin-left: 20px;
+  text-align: left;
+  font-size: 2.5em;
+  color: #fff;
+  letter-spacing: -7px;
+  font-weight: 100;
+  text-transform: uppercase;
+  animation: blur .99s ease-out infinite;
+  text-shadow: 0px 0px 3px #fff, 0px 0px 3px #fff;
+}
+@keyframes blur {
+  from {
+    text-shadow:0px 0px 3px #fff,
+      0px 0px 3px #fff, 
+      0px 0px 15px #fff,
+      0px 0px 15px #fff,
+      0px 0px 15px #fff,
+      0px 0px 15px #fff,
+      0px 0px 15px #fff,
+      0px 0px 15px #fff,
+      0px 0px 30px #fff,
+      0px 0px 30px #7B96B8,
+      0px 0px 30px #7B96B8,
+      0px 0px 75px #7B96B8,
+      0px 5px 45px #7B96B8,
+      0px 5px 45px #7B96B8,
+      0px 5px 45px #7B96B8,
+      0px 5px 45px #7B96B8,
+      0px -5px 45px #7B96B8,
+      0px -5px 45px #7B96B8;
+  }
+}
+*(margin:0; padding:0;)
+.wrapper {
+	width: 150px;
+     margin: 50px auto;
+	}
+	#tabs {
+		width:100%;
+		margin-top:5px;
+	}
+	#tabs ul {
+		list-style: none;
+		display: table-row;
+	}
+	#tabs ul li {
+		display: table-cell;
+		background: #4682B4;
+		height: 15px;
+		text-align: center;
+		border-left: 3px solid #191970;
+		border-radius:5px 5px 0 0;
+	}
+	#tabs ul li:first-child {
+	border-left:none;
+	background:#1E90FF;
+	}
+	#tabs ul li a {
+		display: table-cell;
+		width: 150px;
+		height: 15px;
+		line-height: 15px;
+		color: #191970;
+		font-weight: bold;
+		text-decoration: none;
+		font-size: 14px;
+		
+	}
+	.tab-content {
+	border: 5px solid #1E90FF;}
+	}
+	#tabs ul li a:hover {
+		color:#8A2BE2;
+	}
+	.tabs-text {
+		text-indent: 20px;
+		padding: 10px;
+		background:#AFEEEE;
+		border: 3px solid #6495ED;
+		color:#000080;
+		font-size: 14px;
+		font-family: 'Times New Roman', Times, serif;
+		line-height: 20px;
+		display: none;
+	}
+	a {
+		color:white;
+		font-size: 14px;
+		text-decoration: none;
+		font-family: 'Times New Roman', Times, serif;
+		padding: 5px;
+	}
+	a:hover {
+	color:#8A2BE2;
+	}
+	.fig{
+		text-align:center;
+	}
+.results {
+	width: 145px;
+}
+.results tr[visible='false'],
+.no-result {
+display: none;
+width: 145px;
+}
+.results tr[visible='true'] {
+display: table-row;
+width: 145px;
+}
+.searchCount {
+padding: 8px;
+color: #8A2BE2;
+}
+.header{
+	background:#9370DB ;
+	text-align: center;
+	text-indent: none;
+	margin-top: 5px;
+}
+.element{
+	background:#B0C4DE;
+	font-size: 12px;
+	text-align: center;
+	text-indent: none;
+}
+.hh{
+	color:#0000FF;
+	font-size:12px;
+}
+#detail ul li{
+list-style: none;
+}

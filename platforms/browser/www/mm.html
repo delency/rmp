@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+			<p>
+<table class="results">
+<thead>
+<tr role="row" class="header">
+			<th>Название</th>
+			<th>Тип</th>
+			<th>Местонахождение</th>
+			</tr>
+</thead>
+<tbody>
+<tr role="cell" class="element">
+			<tr><td><a href="#detail-1"class="hh">«Арктический» дом. Учебная база «Бабонегово», дом №10</a></td>
+			<td>Учебная база</td>
+			<td>Бабонегово</td></tr>
+		
+</tr>
+
+
+</tbody>
+
+</table>
+<div id="detail">
+		<ul id="det">
+		<li id="det-1">
+<p>«Арктический» дом. Учебная база «Бабонегово», дом №10</p>
+	<p class="fig"><img src="https://narfu.ru/upload/iblock/141/U0L6w0xeQ_g.jpg" height="145px" width="240px"></p>
+<p>Адрес : Архангельская область, Приморский муниципальный район, муниципальное образование "Боброво-Лявленское, дополнительная территория деревни Конецгорье- Учебная база , строение №10</p>
+<p>На карте: </p>
+<p class="fig">
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A345ccc529c1c8bfea94df1df6e609e8f72b0fac2c0b40cfb7bda686ed7d8974c&amp;width=240&amp;height=145&amp;lang=ru_RU&amp;scroll=true"></script>
+</p>
+</li>
+</ul>
+</div>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script>
+	$ (function() {
+		 $('det-1').show();
+		 
+		 $('#detail-1').click(function(){
+		 if ( $('#tabs-2').attr('class')=='active')
+		 {return false;
+		 }
+		         var links=$(this).children().attr('href');
+				 var prevActives=$('li.active').children().attr('href');
+				 
+			$('li.active').removeClass('active');
+            $(this).addClass('active');
+			
+$(prevActives).fadeOut(500, function(){
+     $(links).fadeIn();
+	 
+         $('#items li').css('background','#4682B4');
+         $ ('li.active').css('background','#1E90FF');
+    });
+      return false;
+	  });
+    });	
+	</script>
+</body>
+</html>
+        
+ 
+
+      
+ 
+  
